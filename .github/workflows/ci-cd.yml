@@ -146,7 +146,7 @@ jobs:
         run: |
           echo "🚀 Deploying to production environment"
           echo "Image: ${{ needs.build.outputs.image-tag }}"
-          exit 1 # FORCED FAILURE
+	        exit 1 # FORCE FAILURE
 
       - name: Post-deployment verification
         run: |
